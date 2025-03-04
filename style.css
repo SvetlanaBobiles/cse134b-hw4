@@ -1,0 +1,153 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+
+    background-color:#e6fbe5
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+
+    color:black;
+
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    width: 125px;
+    height: 100px;
+    background-color: #6fc169;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.box2 {
+    width: 125px;
+    height: 100px;
+    background-color: #6fc169;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 1.25em;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.form_box{
+    display:flex;
+    justify-content:center;
+    padding:10%;
+
+    margin:18%;
+    height:70%;
+
+    background-color: #6fc169;
+}
+
+.info_box{
+    display: flex;
+    flex-direction:column;
+
+    margin:5%;
+    padding:5%;
+
+    background-color: #5e9d5a;
+}
+
+:root {
+    --bg-color: #e6fbe5;
+    --text-color: #000000;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+
+    .intro{
+        color:white;
+    }
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+
+  
+
+
+
+
+
+
+@media only screen and (max-width: 600px) and (orientation: landscape){
+    .container{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 50%;
+    }
+
+    .box2{
+        width:50%
+    }
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait){
+    .container{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 50%;
+    }
+
+    .box2{
+        width:50%
+    }
+
+    
+
+}
+
+@media only screen and (min-width: 601px){
+
+    .box{
+        width: 25%;
+    }
+
+    .box2{
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 1025px){
+
+    .box{
+        width: 25%;
+    }
+
+    .box2{
+        width: 25%;
+    }
+}
+
+
